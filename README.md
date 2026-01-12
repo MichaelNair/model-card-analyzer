@@ -138,3 +138,5 @@ This is the JSON schema that I used for the output:
 3. With more time and context for the user, I also could have included more than just 3 specialized summaries. I could have extracted specific entities like "date published" or "approximate number of parameters" that might be useful on their own.
 
 4. The biggest potential improvement would probably be asking a subject matter expert to red-team some of the summaries. This would be to evaluate accuracy and completeness, but also to compare broader design decisions and whether or not these summaries meet the needs of the client.
+
+5. A possible next step would be to convert the extractions and summaries from JSON into md or another more readable format, md, pdf, etc.
