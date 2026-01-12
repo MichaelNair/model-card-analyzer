@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "Gemini-3-Pro-Model-Card.pdf",
+    "analysis_timestamp": "2026-01-12T13:55:47.693574",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 5973,
+      "completion_tokens": 423,
+      "total_tokens": 6396
+    }
+  },
+  "analysis_results": {
+    "model_name": "Gemini 3 Pro",
+    "training_data": "The model was pre-trained on a large-scale, diverse, multimodal corpus spanning publicly-available web documents, text, code, images, audio (including speech and other audio types), and video. The training mix also included readily downloadable public datasets, crawler-collected data, licensed data via commercial agreements, user data from Google products/services and user interactions with the model (subject to applicable terms, privacy policies, and user controls), other Google-acquired/generated datasets (including workforce-sourced data), and AI-generated synthetic data. Post-training data included instruction-tuning datasets, reinforcement learning data, and human-preference data; reinforcement learning leveraged multi-step reasoning, problem-solving, and theorem-proving data. Data processing included deduplication, honoring robots.txt, safety filtering, and quality filtering, with case-by-case removal of irrelevant/harmful content including pornographic/violent content and CSAM-illegal material.",
+    "model_architecture": "Gemini 3 Pro is a transformer-based, natively multimodal model using a sparse mixture-of-experts (MoE) architecture that dynamically routes tokens to a subset of experts, activating only part of the parameter set per token to decouple total capacity from per-token compute/serving cost. It supports text, vision, and audio inputs, with a token context window up to 1M and text outputs up to 64K tokens. The model includes an optional inference-time \"Deep Think\" mode intended to improve complex problem-solving performance. Specific counts (e.g., layers, heads, total parameters, number of experts) are not provided in the card.",
+    "limitations": "The card notes general foundation-model limitations, including the possibility of hallucinations. It also reports occasional slowness or timeout issues. The model has a knowledge cutoff of January 2025. The main risks highlighted are ongoing jailbreak vulnerability (improved vs. Gemini 2.5 Pro but still an open research problem) and possible degradation in multi-turn conversations."
+  }
+}

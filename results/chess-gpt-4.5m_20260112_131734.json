@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "chess-gpt-4.5m.md",
+    "analysis_timestamp": "2026-01-12T13:17:34.756935",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 1505,
+      "completion_tokens": 240,
+      "total_tokens": 1745
+    }
+  },
+  "analysis_results": {
+    "model_name": "Chess GPT-4.5M",
+    "training_data": "The model was trained on tokenized chess game data prepared from the Lichess dataset (https://huggingface.co/datasets/lichess). Games were tokenized using a custom 32-token vocabulary for chess symbols/notations, and the resulting data was saved into binary files (train.bin and val.bin) with vocabulary metadata stored in meta.pkl. No dataset size or number of games is specified in the card.",
+    "model_architecture": "GPT-based transformer language model implemented as GPT2LMHeadModel with approximately 4.5M parameters. It uses 8 transformer layers with 4 attention heads per layer and an embedding dimension of 256. The training sequence length is 1024 tokens per chess game (block size 1023 plus positional embedding), and it uses a custom 32-token vocabulary.",
+    "limitations": "Because it is a relatively small 4.5M-parameter model, it may not capture extremely complex chess strategies. It is specialized for chess move generation and is not expected to generalize well to standard natural language tasks."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "llama_3.md",
+    "analysis_timestamp": "2026-01-12T09:54:49.495123",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 7099,
+      "completion_tokens": 336,
+      "total_tokens": 7435
+    }
+  },
+  "analysis_results": {
+    "model_name": "Meta Llama 3",
+    "training_data": "Llama 3 was pretrained on a new mix of publicly available online data totaling over 15 trillion tokens (token count refers to pretraining only). The pretraining data cutoff is March 2023 for the 8B model and December 2023 for the 70B model. Instruction-tuned variants were further trained using publicly available instruction datasets plus over 10 million human-annotated examples; the card states that neither pretraining nor fine-tuning used Meta user data.",
+    "model_architecture": "Llama 3 is an auto-regressive (decoder-only) language model using an optimized Transformer architecture. It uses a 128K-token vocabulary tokenizer, is trained with sequence length 8,192 tokens (8k context), and uses Grouped-Query Attention (GQA) for all models to improve inference efficiency. The family is released in 8B and 70B parameter sizes, with instruction-tuned versions aligned via supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF).",
+    "limitations": "Testing described in the card was conducted in English and does not cover all scenarios; the model is intended for English use and use in other languages is considered out-of-scope. The developers note that outputs cannot be predicted in advance and the model may produce inaccurate, biased, or otherwise objectionable responses. They also highlight residual safety risks despite mitigations and recommend application-specific safety testing/tuning and use of additional safeguards (e.g., Llama Guard) to meet a given deployment safety bar."
+  }
+}

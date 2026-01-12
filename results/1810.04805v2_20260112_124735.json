@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "1810.04805v2.pdf",
+    "analysis_timestamp": "2026-01-12T12:47:35.647211",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 18094,
+      "completion_tokens": 453,
+      "total_tokens": 18547
+    }
+  },
+  "analysis_results": {
+    "model_name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "training_data": "For pre-training, the model uses two unlabeled English corpora: BooksCorpus (Zhu et al., 2015; 800M words) and English Wikipedia (2,500M words). For Wikipedia, only text passages are extracted and lists, tables, and headers are ignored; the paper emphasizes using document-level corpora to preserve long contiguous sequences. The combined pre-training corpus is described as ~3.3B words, and training examples are formed by sampling two spans (\"sentences\") with total length ≤ 512 WordPiece tokens, with 15% of WordPiece tokens selected for masking.",
+    "model_architecture": "BERT is a multi-layer bidirectional Transformer encoder (Vaswani et al., 2017) using bidirectional self-attention. Two main configurations are reported: BERTBASE with 12 Transformer blocks (L=12), hidden size 768 (H=768), 12 attention heads (A=12), and ~110M parameters; and BERTLARGE with 24 blocks (L=24), hidden size 1024, 16 heads, and ~340M parameters (feed-forward size is 4H). Inputs use a 30k WordPiece vocabulary with summed token, segment (sentence A/B), and position embeddings, plus special tokens [CLS] and [SEP]; pre-training uses masked language modeling (MLM) and next sentence prediction (NSP).",
+    "limitations": "The paper notes a key pre-train/fine-tune mismatch: the [MASK] token used in MLM does not appear during fine-tuning, which they mitigate via an 80/10/10 masking strategy (mask/random/unchanged). It also states that fine-tuning BERTLARGE can be unstable on small datasets, requiring multiple random restarts to obtain good results. Additionally, longer sequences are disproportionately expensive because self-attention cost is quadratic in sequence length, motivating a training schedule that uses length 128 for 90% of steps and length 512 for the remaining 10%."
+  }
+}

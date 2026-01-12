@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "Knots-ProtBert-BFD-AlphaFold.md",
+    "analysis_timestamp": "2026-01-12T13:56:19.663985",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 1746,
+      "completion_tokens": 268,
+      "total_tokens": 2014
+    }
+  },
+  "analysis_results": {
+    "model_name": "Knots ProtBert-BFD AlphaFold",
+    "training_data": "The model was fine-tuned on the Hugging Face dataset \"EvaKlimentova/knots_AF\". The dataset consists of protein amino-acid sequences with labels indicating knotted (1) vs. unknotted (0), in a CSV-like format with fields \"id,sequence,label\". The evaluation table indicates an overall dataset size of 39,412 proteins with 19,718 in the unknotted set, and also reports per-protein-family subset sizes (e.g., SPOUT 7,371; membrane 8,225; VIT 14,262). No additional details about data source provenance, train/validation splits, or preprocessing beyond tokenization are specified.",
+    "model_architecture": "BERT-based sequence classification model fine-tuned from Rostlab/prot_bert_bfd (ProtBert-BFD). It uses a Hugging Face AutoTokenizer and AutoModelForSequenceClassification setup, where protein sequences are split into space-separated tokens prior to tokenization. Further architectural specifics (e.g., number of layers, hidden size, attention heads, parameter count, context length) are not provided in the card.",
+    "limitations": "UNKNOWN"
+  }
+}

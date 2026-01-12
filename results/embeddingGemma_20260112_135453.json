@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "embeddingGemma.md",
+    "analysis_timestamp": "2026-01-12T13:54:53.658575",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 3664,
+      "completion_tokens": 356,
+      "total_tokens": 4020
+    }
+  },
+  "analysis_results": {
+    "model_name": "EmbeddingGemma",
+    "training_data": "The model was trained on a multilingual text dataset totaling approximately 320 billion tokens, spanning over 100 spoken languages. The data composition is described as including (1) web documents, (2) code and technical documents, and (3) synthetic and task-specific curated data for information retrieval, classification, and sentiment analysis. Preprocessing included multi-stage CSAM filtering, automated filtering of certain personal/sensitive information, and additional quality/safety filtering aligned with Google policies; no specific dataset names or sources beyond these categories are provided.",
+    "model_architecture": "EmbeddingGemma is an open text embedding model with approximately 300M parameters, described as built from Gemma 3 with T5Gemma initialization. It takes text up to a 2K context length and outputs an embedding vector of 768 dimensions, with optional truncation to 512/256/128 via Matryoshka Representation Learning (MRL) followed by re-normalization. The model card does not specify the detailed network architecture (e.g., number of layers/heads) beyond its lineage from Gemma 3 and its embedding output configuration.",
+    "limitations": "Developers note that model capability is strongly dependent on the quality, diversity, and scope of the training data; biases or gaps in the data can limit outputs and the dataset scope constrains subject coverage. The model may struggle with language ambiguity and nuance, including subtle nuances, sarcasm, and figurative language. The card also highlights risks such as perpetuation of biases, potential malicious misuse, and privacy concerns, recommending monitoring, de-biasing efforts, user education/reporting, and adherence to privacy-preserving practices."
+  }
+}

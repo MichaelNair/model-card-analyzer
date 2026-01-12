@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "model_card_file": "functiongemma-270m-it.md",
+    "analysis_timestamp": "2026-01-12T13:55:20.198320",
+    "llm_model": "gpt-5.2-2025-12-11",
+    "tokens_used": {
+      "prompt_tokens": 5566,
+      "completion_tokens": 337,
+      "total_tokens": 5903
+    }
+  },
+  "analysis_results": {
+    "model_name": "FunctionGemma",
+    "training_data": "The model was trained on 6T tokens of text data (knowledge cutoff: August 2024) drawn from a wide variety of sources. The key stated components are (1) Public Tool Definitions (common APIs found on the web) and (2) Tool Use Interactions consisting of prompts, function calls, function responses, and natural-language responses that summarize tool outputs or ask for clarification when prompts are ambiguous/incomplete. Data preprocessing included multi-stage CSAM filtering, automated sensitive/PII filtering, and additional quality/safety filtering aligned with Google's policies.",
+    "model_architecture": "FunctionGemma is a lightweight, text-only, causal language model built on the Gemma 3 270M model (approximately 270M parameters) and is trained specifically for function calling. It uses the same architecture as Gemma 3 but a different chat format oriented toward tool/function calling. The model supports up to a 32K token input context and can generate up to 32K tokens per request (minus input tokens).",
+    "limitations": "The model is not intended for direct dialogue use and is expected to be fine-tuned for best accuracy on specific single-turn or multi-turn function-calling domains. Developers note that biases or gaps in the training data can limit responses, and the model may struggle with open-ended/highly complex tasks, subtle nuance (e.g., sarcasm/figurative language), factual accuracy (it may produce incorrect or outdated statements), and common-sense reasoning. A stated evaluation limitation is that safety testing included only English-language prompts."
+  }
+}
