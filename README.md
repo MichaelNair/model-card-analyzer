@@ -43,7 +43,7 @@
 
 For prompts that are part of the tool, in the `prompt` folder and in the `llm_judge_eval.py` file, I tried to always prioritize giving the LLM as much rich and accurate context as I can in accordance with context engineering principles. I put the document, text or image, after the system message and leave the request for last. I also include formatting examples for the output and structure the prompts using XML tags for clarity (both for my own understanding and the LLM's).
 
-For prompts related to building the tool, I focus on encouraging brevity and simplicity and avoid having the LLM too involved in the architecture.
+For prompts related to building the tool, I focus on encouraging brevity and simplicity and avoid having the LLM too involved in the architecture. I used Cursor running Sonnet 4.5 and GPT 5.2 for code assist and scaffold.
 
 ## Tool Evaluation
 
