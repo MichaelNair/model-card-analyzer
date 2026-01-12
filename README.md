@@ -43,7 +43,7 @@ For prompts related to building the tool, I focus on encouraging brevity and sim
 
 ## Tool Evaluation
 
-I included an automatic LLM-as-a-judge feature in the tool which prints 2 evaluation metrics: accuracy and completeness. These are good analogs for recall and precision, which are the 2 statistics I have the most experience with. I read through the documents and the results myself to form my own opinions of the tool's overall effectiveness.
+I included an automatic LLM-as-a-judge feature in the tool which prints 2 evaluation metrics: accuracy and completeness. These are good analogs for recall and precision, which are the 2 statistics I have the most experience with. I also read through the documents and the results myself to form my own opinions of the tool's overall effectiveness. LLM are very good at generating broad summaries of long technical documents, I am not sure if these summaries in particular meet the needs of the client but as far as I can tell they are accurate, complete and useful.
 
 ## Pre and Post Processing of Data
 
